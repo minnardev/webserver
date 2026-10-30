@@ -1,0 +1,40 @@
+id = "webserver"
+name = "WebServer"
+version = "0.1.0"
+schema_version = 1
+authors = ["Minnar"]
+description = "Live Server like VS Code — auto-reload on file changes with file type notifications (JS/CSS/HTML Updated) and browser auto-open"
+repository = "https://github.com/mark/webserver"
+
+[lib]
+kind = "Rust"
+version = "0.1.0"
+
+[language_servers.webserver]
+language = "HTML"
+languages = ["HTML", "JavaScript", "CSS"]
+
+[language_servers.webserver.language_ids]
+HTML = "html"
+JavaScript = "javascript"
+CSS = "css"
+
+[slash_commands.webserver-start]
+description = "Start Life — start live server and open browser"
+requires_argument = false
+
+[slash_commands.webserver-reopen]
+description = "Restart the live server (Cmd+. / Ctrl+.)"
+requires_argument = false
+
+[slash_commands.webserver-stop]
+description = "Stop the WebServer live server"
+requires_argument = false
+
+[slash_commands.webserver-status]
+description = "Check WebServer live server status"
+requires_argument = false
+
+[slash_commands.webserver-open]
+description = "Open the WebServer in your browser"
+requires_argument = false

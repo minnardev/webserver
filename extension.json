@@ -1,0 +1,38 @@
+{
+  "name": "webserver",
+  "description": "Live reload dev server (like VS Code LiveServer)",
+  "version": "0.0.1",
+  "language_servers": {
+    "webserver": {
+      "command": "./extension.wasm",
+      "language_ids": {
+        "html": "html",
+        "css": "css",
+        "javascript": "javascript",
+        "typescript": "typescript"
+      }
+    }
+  },
+  "slash_commands": [
+    {
+      "command": "webserver-start",
+      "description": "Start Life — start live server and open browser"
+    },
+    {
+      "command": "webserver-reopen",
+      "description": "Restart the live server (Cmd+. / Ctrl+.)"
+    },
+    {
+      "command": "webserver-status",
+      "description": "Check WebServer status"
+    },
+    {
+      "command": "webserver-open",
+      "description": "Open WebServer in browser"
+    },
+    {
+      "command": "webserver-stop",
+      "description": "Stop WebServer"
+    }
+  ]
+}

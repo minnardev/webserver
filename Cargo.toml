@@ -1,0 +1,13 @@
+[package]
+name = "webserver"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/minnardev/webserver"
+description = "Live reload dev server for Zed — Developed by: minnardev"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.7.0"
