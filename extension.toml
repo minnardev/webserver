@@ -1,10 +1,10 @@
 id = "webserver"
 name = "WebServer"
 version = "0.1.0"
-schema_version = 1
+schema_version = 2
 authors = ["Minnar"]
 description = "Live Server like VS Code — auto-reload on file changes with file type notifications (JS/CSS/HTML Updated) and browser auto-open"
-repository = "https://github.com/mark/webserver"
+repository = "https://github.com/minnardev/webserver"
 
 [lib]
 kind = "Rust"
